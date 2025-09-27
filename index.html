@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
     <!--Tailwind CSS CDN LINK-->
-    <link href="
-https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
-" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
 </head>
 
 <body>
     <!--Responsive Navbar-->
     <nav class="bg-green-200 p-4 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl ">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 cursor-pointer md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            class="w-6 h-6 cursor-pointer md:hidden">
             <path fill-rule="evenodd"
                 d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
                 clip-rule="evenodd" />
@@ -28,6 +28,20 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             <a href="./Contact.html" class="hover:underline text-black">Contact</a>
         </div>
     </nav>
+
+    <!--Side navbar-->
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000 " style="width: 45%; height:100vh; right: -50%; ">
+        <div class="text-right right-0 p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+
+        <div class="flex flex-col gap-10 text-gray-600 items-center   ">
+            <a href="./index.html" class="hover:underline text-black">Home</a>
+            <a href="./products.html" class="hover:underline text-black"> Products</a>
+            <a href="./Contact.html" class="hover:underline text-black">Contact</a>
+        </div>
+    </section>
+
 
     <!---Header Section-->
     <section class="bg-green-200 p-5 flex flex justify-center  ">
@@ -48,7 +62,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
     </section>
 
-    <!--About Section-->
+    <!--About Section--->
     <section class="text-center">
         <h1 class="text-3xl font-bold mt-5">About Us</h1>
         <p>This site for those who admire the beauty and harmony nature</p>
@@ -174,6 +188,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>@ 2021 Greenday.com</p>
     </section>
 
+
+    <script src="index.js"></script>
 
 </body>
 
